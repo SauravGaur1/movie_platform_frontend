@@ -1,6 +1,6 @@
-import { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { setUserData } from './store/user/user-slice'
+import { getUser } from './store/user/user-controller';
 
 function App() {
 
@@ -28,6 +28,11 @@ function App() {
           }))}>
             Change name {user.username}
           </button>
+
+          <button onClick={getUser}>
+            getUser check in console
+          </button>
+
         </div>
       </div>
     </>

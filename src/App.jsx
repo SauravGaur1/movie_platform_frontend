@@ -45,7 +45,7 @@ function App() {
           <button onClick={getUser}>getUser check in console</button>
         </div>
       </div>
-      <div className='bg-black text-slate-50 '>
+      <div className='bg-black text-slate-50'>
         <Outlet />
       </div>
     </>
